@@ -46,16 +46,14 @@ class MainActivity : AppCompatActivity() {
 
         ET.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                /*Toast.makeText(this@MainActivity,"beforTextChanged $s",Toast.LENGTH_SHORT).show()*/
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                /*Toast.makeText(this@MainActivity,"onTextChanged $s",Toast.LENGTH_SHORT).show()*/
+                /*Toast.makeText(this@MainA ctivity,"onTextChanged $s",Toast.LENGTH_SHORT).show()*/
                 buttonTV.text = s.toString()
             }
 
             override fun afterTextChanged(s: Editable?) {
-                /*Toast.makeText(this@MainActivity,"afterTextChanged $s",Toast.LENGTH_SHORT).show()*/
             }
         })
         buttonTV.setOnLongClickListener{
